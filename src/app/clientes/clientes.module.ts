@@ -1,15 +1,17 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink, RouterModule } from '@angular/router';
 
+import { ClientesRoutingModule } from './clientes-routing.module';
+import { RouterLink } from '@angular/router';
 
 
 @NgModule({
   declarations: [],
   imports: [
     CommonModule,
+    ClientesRoutingModule,
     RouterLink,
-    RouterModule
+
   ]
 })
-export class TemplateModule { }
+export class ClientesModule { }

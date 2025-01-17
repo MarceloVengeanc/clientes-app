@@ -4,13 +4,14 @@ import { TemplateModule } from './template/template.module';
 import { NavbarComponent } from './template/navbar/navbar.component';
 import { SidebarComponent } from './template/sidebar/sidebar.component';
 import { HomeComponent } from './home/home.component';
+import { ClientesAppComponent } from './clientes/clientes-app/clientes-app.component';
 
 declare var $: any;
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, TemplateModule, NavbarComponent, SidebarComponent, HomeComponent],
+  imports: [RouterOutlet, TemplateModule, NavbarComponent, SidebarComponent, HomeComponent, ClientesAppComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
